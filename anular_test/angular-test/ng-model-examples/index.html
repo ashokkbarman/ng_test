@@ -1,4 +1,4 @@
-<htmln ng-app="myModelApp">
+<html ng-app="myModelApp">
 <head>
 <title>More on ng - Models App</title>
 <script src="angular.js"></script>
@@ -7,14 +7,37 @@
 <body ng-controller="ModelsCtrl">
 	<h1>Moddel App</h1>
 	<p>
-		Text Box: <input type="text" ng-model="textString" />
+		Text Box1: <input type="text" ng-change="textboxChange()"
+			ng-model="textString" />
+	<p>
+		Text Box2: <input type="text" ng-change="textboxChange()"
+			ng-model="textString" />
+	</p>
+	<p>
+		Text Box3: <input type="text" ng-change="textboxChange()"
+			ng-model="textString" />
+	</p>
 	</p>
 	<p>
 		Check Box : <input type="checkbox" ng-model="booleanvalue" />
 	</p>
+	<p>
+		date is : <input type="date" ng-model="datevalue" />
+	</p>
+	<p>
+		Radio : <input type="radio" ng-model="radiovalue" value="opt1">Option
+		1 </input> <input type="radio" ng-model="radiovalue" value="opt2">Option
+		2</input> <input type="radio" ng-model="radiovalue" value="opt3">Option
+		3 </input>
+	</p>
 
-
+	<div>
+		<p>The Text is : {{textString}}</p>
+		<p>The CheckBox is : {{booleanvalue}}</p>
+		<p>The Date is : {{datevalue}}</p>
+		<p>Radio is : {{radiovalue}}</p>
 	</div>
+
 
 </body>
 </html>
