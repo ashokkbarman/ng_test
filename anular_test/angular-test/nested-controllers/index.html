@@ -1,0 +1,19 @@
+<html ng-app="nestedControllersApp">
+<head>
+<title>Nested controllers</title>
+<script src="angular.js"></script>
+<script src="nested-controllers-app.js"></script>
+</head>
+<body>
+	<h1>Nested Controllers App</h1> <!-- scope hierarchy -- this not recommended  -- so use alias syntax as -->
+	<div ng-controller="Ctrl1">
+		<p ng-bind="testCtrl"></p>
+		<div ng-controller="Ctrl2">
+			<p ng-bind="testCtrl"></p>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
