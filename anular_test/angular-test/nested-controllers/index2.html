@@ -1,0 +1,21 @@
+<html ng-app="nestedControllersAppNew">
+<head>
+<title>Nested controllers</title>
+<script src="angular.js"></script>
+<script src="nested-controllers-app-new.js"></script>
+</head>
+<body>
+	<!-- Use of Alias in cotrollers -->
+	<h1>Nested Controllers Application</h1>
+
+	<div ng-controller="Ctrl1 as c1">
+		<p ng-bind="c1.testCtrlnew"></p>
+		<div ng-controller="Ctrl2 as c2">
+			<p ng-bind="c2.testCtrlnew"></p>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
