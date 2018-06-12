@@ -1,0 +1,22 @@
+<html ng-app="moreDirectives">
+<head>
+<title>ng - Hide Show</title>
+<script src="angular.js"></script>
+<script src="app.js"></script>
+</head>
+<body>
+	<h1>ng - Hide Show</h1>
+	<div ng-controller="MoreDirectiveCtrl" as mCtrls>
+		<input type="checkbox" ng-model="mCtrls.checked" />
+		<p ng-if="mCtrls.checked">Some Content 1</p>
+
+		<p ng-show="mCtrls.checked">Some Content 2</p>
+
+		<p ng-hide="mCtrls.checked">Some Content 3</p>
+	</div>
+
+
+
+
+</body>
+</html>
